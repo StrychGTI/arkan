@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Penyewaan Gedung</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+  <link href="public/css/style.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="../../public/css/app.css">
+
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="public/images/logo.svg" alt="Logo Perusahaan" width="180" height="50"
+          class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#jenisPaket">Reservasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentangKami">Tentang Kami </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scheduleCustomer/">Informasi Kalender</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login/">Sign in</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+
+    <!-- Carousel -->
+    <div id="brochureCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"
+      data-bs-wrap="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="public/images/slider/slider3.png" class="d-block w-100" alt="Brosur 1"
+            style="border: 2px ; border-radius: 10px;" />
+        </div>
+        <div class="carousel-item">
+          <img src="public/images/slider/slider2.png" class="d-block w-100" alt="Brosur 2"
+            style="border: 2px ; border-radius: 10px;" />
+        </div>
+        <div class="carousel-item">
+          <img src="public/images/slider/slider4.png" class="d-block w-100" alt="Brosur 3"
+            style="border: 2px ; border-radius: 10px;" />
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#brochureCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#brochureCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End of Carousel -->
+
+
+
+    <div class="text-center mt-4">
+      <h3 class="mb-3">Selamat Datang di Dashboard Penyewaan Gedung GSG</h3>
+      <p class="mb-2">Gedung Serba Guna Politeknik Caltex Riau</p>
+      <p class="mb-2">Jl. Umban Sari (Patin) No. 1 Rumbai Pekanbaru-Riau 28265</p>
+      <p class="mb-4">Tlp. 082-2018737 | 097-98768</p>
+      <button type="button" class="btn btn-outline-primary btn-lg">Pilih Jenis Paket</button>
+    </div>
+
+    <div id="jenisPaket" class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="public/images/brosur/brosur1.jpg" class="card-img-top" alt="Gambar Paket 1">
+            <div class="card-body">
+              <h5 class="card-title">Paket Alumni</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate error sit!
+                Voluptates aliquid velit natus inventore rem, esse aperiam!</p>
+              <!-- <a href="#" class="btn btn-primary">Pesan Sekarang</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="public/images/brosur/brosur2.jpg" class="card-img-top" alt="Gambar Paket 2">
+            <div class="card-body">
+              <h5 class="card-title">Paket Umum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consectetur eveniet
+                perferendis quas sequi earum molestiae non. Saepe, est accusamus? </p>
+              <!-- <a href="#" class="btn btn-primary">Pesan Sekarang</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="public/images/brosur/brosur3.jpg" class="card-img-top" alt="Gambar Paket 3">
+            <div class="card-body">
+              <h5 class="card-title">Paket Tambahan</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit consectetur?
+                Consequuntur iure modi omnis incidunt eius maxime tempora dolores!.</p>
+              <!-- <a href="#" class="btn btn-primary">Pesan Sekarang</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tentangKami" class="container">
+      <div class="text-center mt-4">
+        <h3 class="mb-3">Tentang Kami</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempore, iste ipsam consectetur quia odit
+          minima quae, voluptas maxime et dolorum. Id fuga fugit, nemo eius magni excepturi illo officia voluptatem, ut
+          molestias itaque sint expedita aliquam eum sit nulla. Deserunt eius officiis, ut dolores accusamus sapiente
+          voluptates consequuntur aliquam aspernatur architecto eaque doloribus delectus, quos inventore maxime tempora
+          dolorum harum laboriosam. Quae doloribus officia sunt blanditiis illum dolor tempore, nulla deserunt dolores
+          tenetur! Enim incidunt totam nam magnam quia cumque, aut quis eius mollitia similique cum non consequatur
+          atque
+          esse nihil aspernatur sunt error optio eos laboriosam ad consequuntur?</p>
+      </div>
+    </div>
+
+   
+
+      <div class="container mt-5 mb-5">
+        <div class="text-center mt-4">
+          <h3 class="mb-3">Keuntungan Memilih Layanan Kami</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="benefit" style="  display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;">
+              <i class="bi bi-check-circle-fill icon-primary fs-2"></i>
+              <p>Booking yang mudah dan cepat.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="benefit" style="  display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;">
+              <i class="bi bi-shield-fill icon-primary fs-2"></i>
+              <p>Keamanan data yang terjamin.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="benefit" style="  display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;">
+              <i class="bi bi-clock-fill icon-primary fs-2"></i>
+              <p>Reservasi 24/7.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <footer id="kontak">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15958.480837624786!2d101.426097!3d0.570975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ab67086f2e89%3A0x65a24264fec306bb!2sPoliteknik%20Caltex%20Riau!5e0!3m2!1sid!2sid!4v1718032709698!5m2!1sid!2sid"
+          width="1270" height="350" style="border:0; border-radius: 15px;" allowfullscreen="true" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="container text-center">
+          <span class="text-muted">Politeknik Caltex Riau @2024 | Kontak : 0857-8892-9718</span>
+        </div>
+      </footer>
+
+
+
+
+      <script src="../../public/js/app.js"></script>
+
+</body>
+
+</html>
